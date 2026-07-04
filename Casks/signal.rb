@@ -13,11 +13,9 @@ cask "signal" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Signal.app"
 
-  zap trash: [
-    "~/Library/Containers/ski.brezin.signal",
-  ]
+  zap trash: "~/Library/Containers/ski.brezin.signal"
 end
