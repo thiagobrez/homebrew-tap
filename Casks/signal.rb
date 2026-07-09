@@ -1,6 +1,6 @@
 cask "signal" do
-  version "1.1.0"
-  sha256 "e27df30a679057287e377a95d551431d45bdf5b4645ba5344a87dbef806a7b7b"
+  version "1.2.0"
+  sha256 "c177728081bd4199cfd9b3efce523a2194354832ffc26858dea37b3e61b008b6"
 
   url "https://github.com/thiagobrez/Signal/releases/download/v#{version}/Signal-#{version}.dmg",
       verified: "github.com/thiagobrez/Signal/"
