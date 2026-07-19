@@ -1,21 +1,21 @@
 # thiagobrez/homebrew-tap
 
-Homebrew tap for [Signal](https://github.com/thiagobrez/Signal) — a macOS app
-for focusing on three things a day.
+Homebrew tap for my macOS apps.
 
-## Install
+| App | Install | What it is |
+| --- | --- | --- |
+| [Signal](https://github.com/thiagobrez/Signal) | `brew install thiagobrez/tap/signal` | Focus on three things a day |
+| [UltraWin](https://github.com/thiagobrez/UltraWin) | `brew install thiagobrez/tap/ultrawin` | Share only part of your screen in video calls |
 
-```sh
-brew install thiagobrez/tap/signal
-```
+Each cask installs the same Developer ID–signed, notarized DMG that is attached
+to that app's GitHub Releases.
 
-The cask installs the same Developer ID–signed, notarized DMG that is attached
-to each [GitHub Release](https://github.com/thiagobrez/Signal/releases). It is
-updated automatically by Signal's release workflow
-([`release-build.yml`](https://github.com/thiagobrez/Signal/blob/master/.github/workflows/release-build.yml)),
-from the template in
-[`scripts/update-homebrew-cask.sh`](https://github.com/thiagobrez/Signal/blob/master/scripts/update-homebrew-cask.sh)
-— don't edit `Casks/signal.rb` here by hand.
+## Maintenance
+
+The casks are updated automatically by each app's release workflow
+(`release-build.yml`), from the template in that app's
+`scripts/update-homebrew-cask.sh` — don't edit the files in `Casks/` here by
+hand.
 
 Installed apps self-update via Sparkle, so `brew upgrade` leaves them alone
 unless you pass `--greedy`.
